@@ -1,0 +1,124 @@
+/*  rem and em do NOT depend on html font size in media queries!
+instead, 1rem = 1em = 16px */
+
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+header {
+  padding-left: 5.6rem;
+  padding-top: 2.5rem;
+  color: #ffffff;
+  font-family: "Lora";
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  margin-right: auto;
+}
+header h1 span {
+  font-weight: 400;
+}
+
+.nav-lists {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 4.4rem;
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.cartBtn {
+  display: inline-flex;
+  position: relative;
+  background: none;
+  border: none;
+  color: #ffffff;
+  margin-left: 3.8rem;
+}
+
+ion-icon {
+  position: relative;
+  --ionicon-stroke-width: 40px;
+  font-size: 46px;
+  width: 48px;
+  height: 48px;
+}
+
+.cartBtn span {
+  font-family: "Nunito Sans";
+  font-size: 16px;
+  font-weight: 600;
+  color: #223f5c;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 32px;
+  border-radius: 5px;
+  padding: 0.48rem 1.2rem;
+  background-color: #f8d7a4;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #ffffff;
+  margin-left: 24px;
+
+  display: none;
+}
+
+/****************************************/
+/* BELOW 1200px (for smaller computers) */
+/****************************************/
+@media (max-width: 75rem) {
+  .btn-mobile-nav {
+    display: block;
+    z-index: 4;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 50%;
+    height: 900px;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+
+    /* Hiding the navigation */
+    transform: translateX(100%);
+
+    /* Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    /* opacity: 1; */
+    transform: translateX(0);
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-open .nav-lists {
+    flex-direction: column;
+    margin-top: 20rem;
+  }
+}
