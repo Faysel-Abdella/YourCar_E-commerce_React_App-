@@ -1,0 +1,131 @@
+.about-us-container {
+  padding: 12rem 8.2rem;
+  background-color: #fafafafa;
+}
+
+.about-us {
+  position: relative;
+}
+
+.about-us-container h1 {
+  color: #ebebeb;
+  font-size: 128px;
+  font-family: Lora;
+  font-weight: 700;
+}
+
+.about-us h2 {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  color: #741906;
+  font-size: 56px;
+  font-family: Lora;
+  font-weight: 700;
+}
+
+.about-us p {
+  color: #232730;
+  font-size: 20px;
+  font-family: Nunito Sans;
+  line-height: 24px;
+  letter-spacing: 1px;
+}
+
+.inside-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+}
+
+.first-par {
+  margin-top: 6.8rem;
+}
+
+.second-par {
+  margin-top: 4.8rem;
+}
+/****************************************/
+/* BELOW 1200px (for smaller computers) */
+/****************************************/
+@media (max-width: 70rem) {
+  .inside-container {
+    display: block;
+  }
+
+  .about-us h2 {
+    position: absolute;
+    top: -130px;
+    left: 0;
+  }
+
+  .first-par {
+    margin-top: 6.8rem;
+  }
+
+  .about-us-img {
+    display: none;
+  }
+}
+
+/****************************************/
+/* BELOW 900px (for tablet) */
+/****************************************/
+@media (max-width: 56rem) {
+  .about-us-container {
+    padding: 8rem 8.2rem;
+  }
+  .about-us-container h1 {
+    font-size: 84px;
+  }
+
+  .about-us h2 {
+    top: -112px;
+    left: 0;
+  }
+
+  .about-us p {
+    letter-spacing: 0.75px;
+    line-height: 30px;
+  }
+}
+
+/****************************************/
+/* BELOW 610px (for mobiles) */
+/****************************************/
+@media (max-width: 38rem) {
+  .about-us-container {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .about-us-container h1 {
+    padding-top: 46px;
+    font-size: 64px;
+  }
+
+  .about-us h2 {
+    font-size: 32px;
+    top: -10.5rem;
+    left: 16rem;
+  }
+
+  .about-us p {
+    text-align: left;
+    /* margin: 0 31px 0 13px; */
+    margin-left: 16px;
+    margin-right: 30px;
+
+    font-size: 25px;
+    letter-spacing: 0.75px;
+    line-height: 32px;
+  }
+  .first-par {
+    margin-top: 6.8rem;
+  }
+  .second-par {
+    margin-top: 5rem;
+    padding-bottom: 80px;
+  }
+}

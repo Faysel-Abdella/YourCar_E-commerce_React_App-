@@ -5,14 +5,15 @@ const Hero = () => {
   return (
     <div className={classes.hero}>
       <MainNavBar />
-      <h2>
+      <h2 className={classes.h2Txt}>
         Find the perfect car <br /> for you at YourCar.
       </h2>
-      <p>
+      <p className={classes.heroP}>
         We offer a wide range of <br /> cars that cater to your
-        <br /> needs and budget. Visit
+        <br /> needs and budget.{" "}
+        <span className={classes["breaked-ele"]}> Visit </span>
         <br />
-        us today and drive away
+        us today and drive <span className={classes["braked-ele"]}> away </span>
         <br />
         with your dream car!
       </p>

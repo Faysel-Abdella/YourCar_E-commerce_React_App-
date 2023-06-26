@@ -44,14 +44,6 @@ header h1 span {
   margin-left: 3.8rem;
 }
 
-ion-icon {
-  position: relative;
-  --ionicon-stroke-width: 40px;
-  font-size: 46px;
-  width: 48px;
-  height: 48px;
-}
-
 .cartBtn span {
   font-family: "Nunito Sans";
   font-size: 16px;
@@ -61,8 +53,8 @@ ion-icon {
 
 .badge {
   position: absolute;
-  top: -12px;
-  left: 32px;
+  top: -18px;
+  left: 26px;
   border-radius: 5px;
   padding: 0.48rem 1.2rem;
   background-color: #f8d7a4;
@@ -88,17 +80,18 @@ ion-icon {
   }
 
   .main-nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.9);
     width: 50%;
-    height: 900px;
+    height: 100%;
     z-index: 3;
 
     display: flex;
+    align-items: center;
     justify-content: center;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
 
     /* Hiding the navigation */
     transform: translateX(100%);
@@ -111,14 +104,49 @@ ion-icon {
   }
 
   .nav-open .main-nav {
-    /* opacity: 1; */
     transform: translateX(0);
     pointer-events: auto;
     visibility: visible;
   }
 
-  .nav-open .nav-lists {
+  .nav-lists {
     flex-direction: column;
-    margin-top: 20rem;
+  }
+}
+
+/****************************************/
+/* BELOW 610px (for mobiles) */
+/****************************************/
+@media (max-width: 38rem) {
+  header {
+    position: fixed;
+    left: 0;
+    padding: 20px 14px;
+    margin: 0;
+    background: #fafafa;
+    box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    width: 100vw;
+    color: #12273d;
+    z-index: 100;
+  }
+
+  header h1 {
+    font-size: 3.2rem;
+  }
+
+  .btn-mobile-nav {
+    color: #12273d;
+  }
+
+  .badge {
+    background-color: #12273d;
+  }
+
+  .cartBtn span {
+    color: #ffffff;
+  }
+
+  .btn-mobile-nav {
+    margin-left: 32px;
   }
 }

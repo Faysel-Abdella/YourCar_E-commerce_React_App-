@@ -1,0 +1,85 @@
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10.6rem;
+  margin-top: 11.2rem;
+  padding: 0 12.4rem;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service h3 {
+  margin-top: 5.2rem;
+  color: #12273d;
+  text-align: center;
+  font-size: 32px;
+  font-family: Nunito Sans;
+  font-weight: 700;
+  letter-spacing: -0.16px;
+}
+
+.service p {
+  margin-top: 16px;
+  color: #12273d;
+  text-align: center;
+  font-size: 17px;
+  font-family: Nunito Sans;
+  font-weight: 500;
+  /* letter-spacing: -0.16px; */
+  line-height: 28px;
+}
+
+/****************************************/
+/* BELOW 1200px (for smaller computers) */
+/****************************************/
+@media (max-width: 75rem) {
+  .services {
+    gap: 7rem;
+  }
+  .service p {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+
+/****************************************/
+/* BELOW 1130px (for smaller computers) */
+/****************************************/
+@media (max-width: 75rem) {
+  .services {
+    grid-template-columns: 1fr;
+    gap: 11rem;
+    padding-bottom: 30px;
+  }
+  .service p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+/****************************************/
+/* BELOW 610px (for mobiles) */
+/****************************************/
+@media (max-width: 38rem) {
+  .services {
+    padding: 0 18px;
+    padding-bottom: 10rem;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .service h3 {
+    margin-top: 2rem;
+  }
+
+  .service p {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: -0.12px;
+  }
+}
