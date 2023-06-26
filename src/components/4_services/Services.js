@@ -3,7 +3,7 @@ import classes from "./services.module.css";
 
 const Services = () => {
   return (
-    <div className={classes["services-container"]}>
+    <div className={classes["services-container"]} id="section3">
       <h1>SERVICES</h1>
       <h2>Services</h2>
       <Service />

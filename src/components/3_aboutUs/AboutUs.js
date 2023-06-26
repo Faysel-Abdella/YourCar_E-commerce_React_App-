@@ -3,7 +3,7 @@ import myimg from "../../assets/aboutUsimg/abtUs.png";
 
 const AboutUs = () => {
   return (
-    <div className={classes["about-us-container"]}>
+    <div className={classes["about-us-container"]} id="section2">
       <h1>ABOUT US</h1>
       <div className={classes["inside-container"]}>
         <div className={classes["about-us"]}>

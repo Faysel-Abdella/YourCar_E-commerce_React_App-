@@ -17,6 +17,7 @@
   height: auto;
   background-color: #dfdfdf;
   overflow: hidden;
+  padding-bottom: 72px;
 }
 
 .services-container h1 {
@@ -64,5 +65,19 @@
 
   .services-container h2 {
     top: 14rem;
+  }
+}
+
+/****************************************/
+/* BELOW 400px (for small phones) */
+/****************************************/
+@media (max-width: 25rem) {
+  .services-container h1 {
+    font-size: 6rem;
+  }
+
+  .services-container h2 {
+    top: 120px;
+    font-size: 4rem;
   }
 }

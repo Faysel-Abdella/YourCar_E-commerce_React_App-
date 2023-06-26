@@ -8,11 +8,11 @@ instead, 1rem = 1em = 16px */
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
 
 header {
+  display: flex;
   padding-left: 5.6rem;
   padding-top: 2.5rem;
   color: #ffffff;
   font-family: "Lora";
-  display: flex;
   align-items: center;
 }
 
@@ -33,6 +33,10 @@ header h1 span {
   font-family: "Noto Sans";
   font-weight: 700;
   font-size: 2.4rem;
+}
+
+.cart svg g path {
+  fill: #ffffff;
 }
 
 .cartBtn {
@@ -70,6 +74,78 @@ header h1 span {
   display: none;
 }
 
+.active {
+  background-color: #741906;
+  border-radius: 6px;
+  padding: 8px 14px;
+}
+
+.navLink {
+  position: relative;
+  cursor: pointer;
+}
+
+.navLink::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 100%;
+  width: 0;
+  height: 4px;
+  background-color: #741906;
+  transition: width 0.3s ease-in-out;
+}
+
+.navLink:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+/* ****Sicky navigation***** */
+
+header.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 9.8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 90px;
+  padding: 0 9.2rem;
+  background: #fafafa;
+  box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  z-index: 999;
+}
+
+header.sticky h1 {
+  color: #12273d;
+}
+
+header.sticky .nav-lists {
+  color: #12273d;
+}
+
+head.sticky .navLink:hover {
+  cursor: pointer;
+}
+
+header.sticky .active {
+  color: #ffffff;
+}
+
+header.sticky .close-icn {
+  color: #ffffff;
+}
+
+header.sticky .cart svg g path {
+  fill: #12273d;
+}
+
+header.sticky .btn-mobile-nav {
+  color: #12273d;
+}
+
 /****************************************/
 /* BELOW 1200px (for smaller computers) */
 /****************************************/
@@ -77,6 +153,7 @@ header h1 span {
   .btn-mobile-nav {
     display: block;
     z-index: 4;
+    margin-left: 40px;
   }
 
   .main-nav {
@@ -90,7 +167,7 @@ header h1 span {
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     transition: all 0.4s ease-in-out;
 
     /* Hiding the navigation */
@@ -111,6 +188,20 @@ header h1 span {
 
   .nav-lists {
     flex-direction: column;
+    align-items: start;
+    padding-left: 7rem;
+    font-size: 26px;
+  }
+
+  header.sticky .nav-lists {
+    color: #ffffff;
+  }
+
+  .active {
+    background-color: #741906;
+    border-radius: 6px;
+    padding: 8px 14px;
+    width: auto;
   }
 }
 
@@ -128,6 +219,20 @@ header h1 span {
     width: 100vw;
     color: #12273d;
     z-index: 100;
+    height: 9.8rem;
+  }
+
+  header.sticky {
+    position: fixed;
+    left: 0;
+    padding: 20px 14px;
+    margin: 0;
+    background: #fafafa;
+    box-shadow: 5px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    width: 100vw;
+    color: #12273d;
+    z-index: 100;
+    height: 9.8rem;
   }
 
   header h1 {
@@ -138,15 +243,34 @@ header h1 span {
     color: #12273d;
   }
 
+  .cart svg g path {
+    fill: #12273d;
+  }
+
   .badge {
     background-color: #12273d;
   }
 
-  .cartBtn span {
+  .cartBtn span,
+  .close-icn,
+  .nav-lists {
     color: #ffffff;
+  }
+
+  .main-nav {
+    width: 70%;
   }
 
   .btn-mobile-nav {
     margin-left: 32px;
+  }
+}
+
+/****************************************/
+/* BELOW 400px (for small phones) */
+/****************************************/
+@media (max-width: 25rem) {
+  .nav-lists {
+    padding-left: 4rem;
   }
 }

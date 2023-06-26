@@ -3,7 +3,7 @@ import classes from "./Hero.module.css";
 
 const Hero = () => {
   return (
-    <div className={classes.hero}>
+    <div className={classes.hero} id="section1">
       <MainNavBar />
       <h2 className={classes.h2Txt}>
         Find the perfect car <br /> for you at YourCar.
