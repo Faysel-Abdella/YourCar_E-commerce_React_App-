@@ -1,67 +1,19 @@
+import { useEffect } from "react";
+
 import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import classes from "./carLists.module.css";
-
 import CarList from "../carList/CarList";
 
-const CartLists = () => {
-  //State for prev and next buttons
+import data from "../../../data/data.json";
 
-  const dataArray = [
-    {
-      imgSrc: "../../../assets/carsSectionImgs/car1.png",
-      class: "LEXUTURY CAR",
-      carName: "Mercedes G -2",
-      description:
-        "The Porsche 911 is a true icon in the sports car world, known for its sleek design, impressive performance, and superior handling. It's a two-door, two-seat coupe that's perfect for those who love to feel the wind in their hair and the road beneath their wheels.",
-      seats: 2,
-      luggage: 5,
-      carQuantity: 7,
-    },
-    {
-      imgSrc: "../../../assets/carsSectionImgs/car1.png",
-      class: "LEXUTURY CAR",
-      carName: "Mercedes G -2",
-      description:
-        "The Porsche 911 is a true icon in the sports car world, known for its sleek design, impressive performance, and superior handling. It's a two-door, two-seat coupe that's perfect for those who love to feel the wind in their hair and the road beneath their wheels.",
-      seats: 2,
-      luggage: 5,
-      carQuantity: 7,
-    },
-    {
-      imgSrc: "../../../assets/carsSectionImgs/car1.png",
-      class: "LEXUTURY CAR",
-      carName: "Mercedes G -2",
-      description:
-        "The Porsche 911 is a true icon in the sports car world, known for its sleek design, impressive performance, and superior handling. It's a two-door, two-seat coupe that's perfect for those who love to feel the wind in their hair and the road beneath their wheels.",
-      seats: 2,
-      luggage: 5,
-      carQuantity: 7,
-    },
-    {
-      imgSrc: "../../../assets/carsSectionImgs/car1.png",
-      class: "LEXUTURY CAR",
-      carName: "Mercedes G -2",
-      description:
-        "The Porsche 911 is a true icon in the sports car world, known for its sleek design, impressive performance, and superior handling. It's a two-door, two-seat coupe that's perfect for those who love to feel the wind in their hair and the road beneath their wheels.",
-      seats: 2,
-      luggage: 5,
-      carQuantity: 7,
-    },
-    {
-      imgSrc: "../../../assets/carsSectionImgs/car1.png",
-      class: "LEXUTURY CAR",
-      carName: "Mercedes G -2",
-      description:
-        "The Porsche 911 is a true icon in the sports car world, known for its sleek design, impressive performance, and superior handling. It's a two-door, two-seat coupe that's perfect for those who love to feel the wind in their hair and the road beneath their wheels.",
-      seats: 2,
-      luggage: 5,
-      carQuantity: 7,
-    },
-  ];
+const CartLists = () => {
+  console.log(data.cars);
+
+  const dataArray = [...data.cars];
 
   const sliderSettings = {
     // arrows: false,
@@ -70,7 +22,7 @@ const CartLists = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    initialSlide: 2,
+    initialSlide: 3,
     infinite: true,
 
     nextArrow: (
@@ -119,16 +71,17 @@ const CartLists = () => {
         </div>
       </div>
     ),
+
     responsive: [
       {
-        breakpoint: 1220,
+        breakpoint: 1280,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 1000,
+        breakpoint: 1040,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

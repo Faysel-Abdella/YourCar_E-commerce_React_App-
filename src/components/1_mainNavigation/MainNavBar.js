@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 import { MenuOutline } from "heroicons-react";
 import { XOutline } from "heroicons-react";
 
 import { Link } from "react-scroll";
 
+import Cart from "../../modal/Cart";
 import classes from "./MainNavBar.module.css";
 
 const MainNavBar = () => {
@@ -17,6 +18,32 @@ const MainNavBar = () => {
       ? "auto"
       : "hidden";
   };
+
+  // Controll cart modal
+  const [cartOpen, setCartOpen] = useState(false);
+  const toogleCartHandler = () => {
+    setCartOpen((prevState) => !prevState);
+
+    // disabling scrolling if the mobile navigation is open
+    document.querySelector("html").style.overflow = cartOpen
+      ? "auto"
+      : "hidden";
+  };
+
+  // ******** hide the navBar if the user click an area outside navbar
+  const navRef = useRef();
+  // useEffect(() => {
+  //   const handleOutsideClick = (event) => {
+  //     if (event.target.id !== "mainNav") {
+  //       setMobileNavOpen(false);
+  //     }
+  //   };
+  //   window.addEventListener("click", handleOutsideClick);
+
+  //   return () => {
+  //     window.removeEventListener("click", handleOutsideClick);
+  //   };
+  // }, []);
 
   // ********Making the navigation stocky after the first page******************* //
   const [isSticky, setIsSticky] = useState(false);
@@ -36,6 +63,7 @@ const MainNavBar = () => {
   //****************************************************************************//
 
   // Hide the navigation after the user click one of the button links
+
   const hideNavHandler = () => {
     setMobileNavOpen((prevState) => !prevState);
     document.querySelector("html").style.overflow = "auto";
@@ -46,12 +74,12 @@ const MainNavBar = () => {
       <header
         className={`${isSticky ? classes.sticky : ""} ${
           mobileNavOpen ? classes["nav-open"] : ""
-        }`}
+        } ${cartOpen ? classes["cart-open"] : ""}`}
       >
         <h1>
           Your<span>Car</span>
         </h1>
-        <nav className={classes["main-nav"]}>
+        <nav className={classes["main-nav"]} id="mainNav" ref={navRef}>
           <ul className={classes["nav-lists"]}>
             <li>
               <Link
@@ -125,7 +153,8 @@ const MainNavBar = () => {
             </li>
           </ul>
         </nav>
-        <button className={classes.cartBtn}>
+
+        <button className={classes.cartBtn} onClick={toogleCartHandler}>
           <div className={classes.cart}>
             <svg
               width="35"
@@ -172,6 +201,10 @@ const MainNavBar = () => {
           )}
         </button>
       </header>
+
+      <div>
+        <Cart cartShow={cartOpen} />
+      </div>
     </nav>
   );
 };

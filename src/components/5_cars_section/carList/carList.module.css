@@ -1,10 +1,15 @@
 .car-card {
+  /* height: 570px; */
   background: #ffffff;
   box-shadow: 4px 10px 30px 3px rgba(0, 0, 0, 0.1);
   padding: 3.6rem;
   margin: 40px 26px;
   margin-bottom: 66px;
   font-family: Nunito Sans;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
 }
 
 .img-container img {
@@ -35,15 +40,17 @@
 
 .description-container {
   margin-top: 24px;
+  height: 15rem;
+  margin-bottom: 4.6rem;
 }
 .description-container p {
   color: rgba(35, 34, 34, 0.96);
   font-size: 13px;
   line-height: 150%;
-  margin-bottom: 4.6rem;
 }
 
 .car-footer-container {
+  margin-top: auto;
   display: flex;
   justify-content: space-between;
   /* gap: 5.2rem; */
@@ -77,6 +84,7 @@
 }
 
 .car-quantity-conatiner small {
+  cursor: pointer;
   padding: 0px 12px;
   border-radius: 4px;
   background: #741906;
@@ -93,6 +101,24 @@
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
+/****************************************/
+/* BELOW 1280px (for smaller computers) */
+/****************************************/
+@media (max-width: 80rem) {
+  .description-container {
+    margin-top: 24px;
+    height: 12rem;
+    margin-bottom: 4.6rem;
+  }
+
+  .description-container p {
+    font-size: 14px;
+  }
+}
+
+/****************************************/
+/* BELOW 700px (for smaller computers) */
+/****************************************/
 
 /****************************************/
 /* BELOW 1220px (for smaller computers) */
@@ -100,6 +126,27 @@
 @media (max-width: 76rem) {
   .description-container p {
     font-size: 18px;
+  }
+
+  .description-container {
+    margin-top: 24px;
+    height: 19rem;
+    margin-bottom: 4.6rem;
+  }
+}
+
+/****************************************/
+/* BELOW 1140px (for smaller computers) */
+/****************************************/
+@media (max-width: 71.25rem) {
+  .description-container p {
+    font-size: 18px;
+  }
+
+  .description-container {
+    margin-top: 24px;
+    height: 23rem;
+    margin-bottom: 4.6rem;
   }
 }
 
@@ -165,5 +212,9 @@
 
   .name-info-container h1 {
     font-size: 26px;
+  }
+
+  .description-container {
+    margin-bottom: 60px;
   }
 }

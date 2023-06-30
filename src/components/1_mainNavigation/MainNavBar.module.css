@@ -40,12 +40,14 @@ header h1 span {
 }
 
 .cartBtn {
+  cursor: pointer;
   display: inline-flex;
   position: relative;
   background: none;
   border: none;
   color: #ffffff;
   margin-left: 3.8rem;
+  /* z-index: 999; */
 }
 
 .cartBtn span {

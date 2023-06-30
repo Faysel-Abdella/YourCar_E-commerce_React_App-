@@ -1,0 +1,152 @@
+.cart-modal {
+  position: absolute;
+  top: 9.8rem;
+  right: 0;
+  width: 30%;
+  height: 100vh;
+  padding: 22px;
+  background-color: rgb(18, 39, 61, 0.95);
+
+  font-family: "Nunito Sans";
+  position: fixed;
+  z-index: 3;
+  transition: all 0.4s ease-in-out;
+
+  /* Hiding the navigation */
+  transform: translateX(100%);
+
+  /* Make it unaccessible to mouse and keyboard */
+  pointer-events: none;
+
+  /* Hide it from screen readers */
+  visibility: hidden;
+}
+
+.show-cart.cart-modal {
+  transform: translateX(0);
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.cart-items {
+  height: 420px;
+  color: #741906;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  scroll-behavior: auto;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 16px;
+  padding-left: 22px;
+  padding-right: 0;
+  background-color: #ffffff;
+}
+
+.cart-texts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-texts-container h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cart-texts-container h4 {
+  font-size: 12px;
+}
+
+.cart-image-container img {
+  width: 138.833px;
+  height: 80.5px;
+  flex-shrink: 0;
+}
+
+.cart-quantity-conatiner {
+  display: flex;
+  align-items: center;
+}
+
+.cart-quantity-conatiner svg {
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+.cart-quantity-conatiner h2 {
+  color: #12273d;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+.cart-quantity-conatiner small {
+  cursor: pointer;
+  padding: 0px 12px;
+  border-radius: 4px;
+  background: #741906;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: Nunito Sans;
+  font-weight: 400;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.cart-quantity-conatiner small:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.delete-button {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.delete-button div {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 2px;
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 30px;
+  background: #741906;
+  border-radius: 4px;
+}
+
+/* ################## */
+
+/****************************************/
+/* BELOW 1200px (for smaller computers) */
+/****************************************/
+@media (max-width: 72rem) {
+  .cart-modal {
+    width: 40%;
+  }
+}
+@media (max-width: 54rem) {
+  .cart-modal {
+    width: 50%;
+  }
+}
+@media (max-width: 45rem) {
+  .cart-modal {
+    width: 60%;
+  }
+}
+@media (max-width: 36rem) {
+  .cart-modal {
+    width: 90%;
+  }
+}

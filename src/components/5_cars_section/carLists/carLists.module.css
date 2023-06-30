@@ -5,6 +5,13 @@
   padding-bottom: 14rem;
 }
 
+.car-items {
+  display: flex;
+}
+.car-item {
+  flex: 1;
+}
+
 .content .header {
   position: relative;
   color: #ebebeb;
