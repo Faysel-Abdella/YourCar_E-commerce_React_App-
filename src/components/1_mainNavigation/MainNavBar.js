@@ -29,7 +29,6 @@ const MainNavBar = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    console.log(window.scrollY);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -61,7 +60,7 @@ const MainNavBar = () => {
                 activeClass={classes.active}
                 spy={true}
                 smooth={true}
-                offset={-20}
+                offset={-65}
                 duration={500}
                 onClick={hideNavHandler}
               >
@@ -75,7 +74,7 @@ const MainNavBar = () => {
                 activeClass={classes.active}
                 spy={true}
                 smooth={true}
-                offset={-20}
+                offset={-25}
                 duration={500}
                 onClick={hideNavHandler}
               >
@@ -89,7 +88,7 @@ const MainNavBar = () => {
                 activeClass={classes.active}
                 spy={true}
                 smooth={true}
-                offset={-20}
+                offset={-25}
                 duration={500}
                 onClick={hideNavHandler}
               >
@@ -103,7 +102,7 @@ const MainNavBar = () => {
                 activeClass={classes.active}
                 spy={true}
                 smooth={true}
-                offset={-20}
+                offset={-25}
                 duration={500}
                 onClick={hideNavHandler}
               >
@@ -117,7 +116,7 @@ const MainNavBar = () => {
                 activeClass={classes.active}
                 spy={true}
                 smooth={true}
-                offset={-20}
+                offset={-25}
                 duration={500}
                 onClick={hideNavHandler}
               >

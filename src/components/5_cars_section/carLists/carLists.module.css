@@ -1,0 +1,90 @@
+.content {
+  position: relative;
+  background: #fafafa;
+  padding: 20px 12.4rem 5.2rem 12.4rem;
+  padding-bottom: 14rem;
+}
+
+.content .header {
+  position: relative;
+  color: #ebebeb;
+  font-size: 128px;
+  font-family: Lora;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 4.8rem;
+  margin-bottom: 4.4rem;
+}
+
+.content .header h3 {
+  position: absolute;
+  left: 45%;
+  top: 63%;
+  color: #741906;
+  font-size: 48px;
+  font-family: Lora;
+  font-weight: 700;
+}
+
+.prev-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  background: #741906;
+}
+
+.next-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  background: #741906;
+}
+
+/* .slick-prev {
+  left: 0px !important;
+} */
+.slick-next:before,
+.slick-prev:before {
+  content: "" !important;
+}
+.next-slick-arrow,
+.prev-slick-arrow {
+  color: #000000;
+  font-size: 45px;
+}
+
+/****************************************/
+/* BELOW 700px (for samll tablets) */
+/****************************************/
+@media (max-width: 44rem) {
+  .content {
+    padding: 20px 0.2rem 5.2rem 0.2rem;
+  }
+}
+
+/****************************************/
+/* BELOW 560px (for samll mobile) */
+/****************************************/
+@media (max-width: 35rem) {
+  .content {
+    padding: 20px 0.5rem 5.2rem 0.5rem;
+  }
+
+  .content .header {
+    font-size: 64px;
+  }
+
+  .content .header h3 {
+    font-size: 32px;
+  }
+}

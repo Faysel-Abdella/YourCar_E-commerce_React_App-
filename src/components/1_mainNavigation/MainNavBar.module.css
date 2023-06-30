@@ -89,14 +89,13 @@ header h1 span {
   content: "";
   position: absolute;
   bottom: -4px;
-  left: 100%;
   width: 0;
   height: 4px;
-  background-color: #741906;
+  background-color: #d7c7c4;
   transition: width 0.3s ease-in-out;
 }
 
-.navLink:hover::before {
+.navLink:not(.active):hover::before {
   width: 100%;
   left: 0;
 }

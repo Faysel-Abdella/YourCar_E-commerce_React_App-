@@ -1,0 +1,169 @@
+.car-card {
+  background: #ffffff;
+  box-shadow: 4px 10px 30px 3px rgba(0, 0, 0, 0.1);
+  padding: 3.6rem;
+  margin: 40px 26px;
+  margin-bottom: 66px;
+  font-family: Nunito Sans;
+}
+
+.img-container img {
+  margin: 0 auto;
+
+  width: 260px;
+  height: 140px;
+  flex-shrink: 0;
+}
+
+.name-info-container {
+  margin-top: 18px;
+}
+
+.name-info-container h1 {
+  color: #741906;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.name-info-container h3 {
+  color: rgba(35, 34, 34, 0.96);
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.description-container {
+  margin-top: 24px;
+}
+.description-container p {
+  color: rgba(35, 34, 34, 0.96);
+  font-size: 13px;
+  line-height: 150%;
+  margin-bottom: 4.6rem;
+}
+
+.car-footer-container {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 5.2rem; */
+}
+
+.seats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  color: #741906;
+  font-size: 14px;
+  font-weight: 400;
+}
+.seats-container div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.car-quantity-conatiner {
+  display: flex;
+  align-items: center;
+}
+
+.car-quantity-conatiner h2 {
+  color: #12273d;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+.car-quantity-conatiner small {
+  padding: 0px 12px;
+  border-radius: 4px;
+  background: #741906;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: Nunito Sans;
+  font-weight: 400;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.car-quantity-conatiner small:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/****************************************/
+/* BELOW 1220px (for smaller computers) */
+/****************************************/
+@media (max-width: 76rem) {
+  .description-container p {
+    font-size: 18px;
+  }
+}
+
+/****************************************/
+/* BELOW 940px (for tablet) */
+/****************************************/
+@media (max-width: 59rem) {
+  .img-container img {
+    margin: 0 auto;
+    width: 360px;
+    height: 240px;
+    flex-shrink: 0;
+  }
+
+  .name-info-container h1 {
+    font-size: 32px;
+  }
+
+  .name-info-container h3 {
+    font-size: 22px;
+  }
+  .description-container p {
+    font-size: 20px;
+  }
+
+  .seats-container {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+/****************************************/
+/* BELOW 660px (for small tablet and phones) */
+/****************************************/
+@media (max-width: 42rem) {
+  .img-container img {
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    flex-shrink: 0;
+  }
+}
+
+/****************************************/
+/* BELOW 1220px (for smaller computers) */
+/****************************************/
+@media (max-width: 76rem) {
+  .description-container p {
+    font-size: 18px;
+  }
+}
+
+/****************************************/
+/* BELOW 560px (for samll mobile) */
+/****************************************/
+@media (max-width: 35rem) {
+  .img-container img {
+    margin: 0 auto;
+    width: 260px;
+    height: 180px;
+    flex-shrink: 0;
+  }
+
+  .name-info-container h1 {
+    font-size: 26px;
+  }
+}
