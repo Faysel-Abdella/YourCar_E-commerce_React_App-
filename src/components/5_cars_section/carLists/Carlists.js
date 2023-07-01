@@ -11,8 +11,6 @@ import CarList from "../carList/CarList";
 import data from "../../../data/data.json";
 
 const CartLists = () => {
-  console.log(data.cars);
-
   const dataArray = [...data.cars];
 
   const sliderSettings = {

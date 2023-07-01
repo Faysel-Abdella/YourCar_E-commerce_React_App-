@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import { useSelector } from "react-redux";
 
 import { MenuOutline } from "heroicons-react";
 import { XOutline } from "heroicons-react";
@@ -9,6 +10,22 @@ import Cart from "../../modal/Cart";
 import classes from "./MainNavBar.module.css";
 
 const MainNavBar = () => {
+  // Extracting what we need for this component from the store
+  const totalOrderedQuantity = useSelector(
+    (state) => state.totalOrderedQuantity
+  );
+
+  const totalQuantity = localStorage.getItem("total_quantity")
+    ? JSON.parse(localStorage.getItem("total_quantity"))
+    : 0;
+
+  useEffect(() => {
+    localStorage.setItem(
+      "total_quantity",
+      JSON.stringify(totalOrderedQuantity)
+    );
+  }, [totalOrderedQuantity]);
+
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const toogleNavigationHandler = () => {
     setMobileNavOpen((prevState) => !prevState);
@@ -182,7 +199,7 @@ const MainNavBar = () => {
               </g>
             </svg>
           </div>
-          <span className={classes.badge}>0</span>
+          <span className={classes.badge}>{totalOrderedQuantity}</span>
         </button>
         <button className={classes["btn-mobile-nav"]}>
           {!mobileNavOpen && (
