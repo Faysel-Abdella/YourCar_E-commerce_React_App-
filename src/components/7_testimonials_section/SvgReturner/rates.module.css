@@ -1,0 +1,10 @@
+/****************************************/
+/* BELOW 760px (for mobiles) */
+/****************************************/
+@media (max-width: 51rem) {
+  .rates svg {
+    width: 94px;
+    height: 13.926px;
+    flex-shrink: 0;
+  }
+}

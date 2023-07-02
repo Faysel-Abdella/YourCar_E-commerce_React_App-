@@ -1,0 +1,25 @@
+.description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.description-container h1 {
+  color: #741906;
+  font-size: 32px;
+  font-family: Lora;
+  font-weight: 700;
+}
+
+.description-container h1 span {
+  font-weight: 400;
+}
+
+.description-container p {
+  color: #12273d;
+  font-size: 16px;
+  font-family: Nunito Sans;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+}

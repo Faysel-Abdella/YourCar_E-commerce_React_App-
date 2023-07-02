@@ -15,10 +15,6 @@ const MainNavBar = () => {
     (state) => state.totalOrderedQuantity
   );
 
-  const totalQuantity = localStorage.getItem("total_quantity")
-    ? JSON.parse(localStorage.getItem("total_quantity"))
-    : 0;
-
   useEffect(() => {
     localStorage.setItem(
       "total_quantity",

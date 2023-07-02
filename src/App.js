@@ -5,6 +5,7 @@ import Services from "./components/4_services/Services";
 import CartLists from "./components/5_cars_section/carLists/CarLists";
 import CarsImages from "./components/6_cars_images_section/CarsImages";
 import Testimonials from "./components/7_testimonials_section/Testimonials";
+import Sponsors from "./components/8_sponsors_section/Sponsors";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <CartLists />
       <CarsImages />
       <Testimonials />
+      <Sponsors />
     </>
   );
 }

@@ -51,3 +51,153 @@
   right: -130px;
   bottom: -60px;
 }
+
+/****************************************/
+/* BELOW 1100px (for samll computers) */
+/****************************************/
+@media (max-width: 69rem) {
+  .testimonial-container {
+    padding: 5.7rem 10rem 4.3rem 10rem;
+    margin: 0rem 15rem;
+    margin-top: 6rem;
+    margin-bottom: 40px;
+  }
+}
+
+/****************************************/
+/* BELOW 815px (for tablet) */
+/****************************************/
+@media (max-width: 51rem) {
+  .testimonial-container {
+    padding: 5.7rem 10rem 4.3rem 10rem;
+    margin: 0rem 15rem;
+    margin-top: 6rem;
+    margin-bottom: 40px;
+  }
+
+  .testimonial-container p {
+    font-size: 20px;
+    margin-bottom: 4.2rem;
+  }
+
+  .rates {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .testimonial-container h2 {
+    font-size: 25px;
+  }
+
+  .testimonial-container span {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 0px;
+  }
+
+  .testimonial-car-image {
+    position: absolute;
+    right: -130px;
+    bottom: -60px;
+  }
+
+  /* .testimonial-car-image img {
+    width: 104px;
+    height: 69px;
+    flex-shrink: 0;
+  } */
+}
+/****************************************/
+/* BELOW 815px (for tablet) */
+/****************************************/
+@media (max-width: 51rem) {
+  .testimonial-container {
+    padding: 5.7rem 10rem 4.3rem 10rem;
+    margin: 0rem 15rem;
+    margin-top: 6rem;
+    margin-bottom: 40px;
+  }
+
+  .testimonial-container p {
+    font-size: 20px;
+    margin-bottom: 4.2rem;
+  }
+
+  .rates {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .testimonial-container h2 {
+    font-size: 25px;
+  }
+
+  .testimonial-container span {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 0px;
+  }
+
+  .testimonial-car-image {
+    position: absolute;
+    right: -130px;
+    bottom: -60px;
+  }
+}
+
+/****************************************/
+/* BELOW 760px (for mobiles) */
+/****************************************/
+@media (max-width: 51rem) {
+  .testimonial-container {
+    padding: 5.7rem 6rem 4.3rem 6rem;
+    margin: 0rem 3rem;
+    margin-top: 6rem;
+    margin-bottom: 40px;
+  }
+
+  .testimonial-container p {
+    font-size: 15px;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2px;
+  }
+
+  .rates {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .testimonial-container h2 {
+    font-size: 20px;
+  }
+
+  .testimonial-container span {
+    font-size: 14px;
+  }
+
+  .testimonial-car-image {
+    position: absolute;
+    right: -22px;
+    bottom: -14px;
+  }
+
+  .testimonial-car-image img {
+    width: 104px;
+    height: 69px;
+    flex-shrink: 0;
+  }
+}
+
+/****************************************/
+/* BELOW 390px (for small mobiles) */
+/****************************************/
+@media (max-width: 24.5rem) {
+  .testimonial-container {
+    padding: 5.7rem 3rem 4.3rem 3rem;
+    margin: 0rem 3rem;
+    margin-top: 6rem;
+    margin-bottom: 40px;
+  }
+}

@@ -10,7 +10,7 @@
 
 .testimonials-container h1 {
   position: relative;
-  color: #ebebeb3e;
+  color: #ebebeb22;
   font-size: 128px;
   font-family: Lora;
   font-weight: 700;
@@ -28,6 +28,45 @@
   font-weight: 700;
 }
 
-.slickDots {
-  color: #fff;
+/****************************************/
+/* BELOW 1100px (for samll computers) */
+/****************************************/
+@media (max-width: 69rem) {
+  .testimonials-container h1 {
+    font-size: 100px;
+  }
+
+  .testimonials-container h1 h3 {
+    font-size: 50px;
+  }
+}
+
+/****************************************/
+/* BELOW 815px (for tablet) */
+/****************************************/
+@media (max-width: 51rem) {
+  .testimonials-container h1 {
+    font-size: 88px;
+  }
+
+  .testimonials-container h1 h3 {
+    font-size: 42px;
+  }
+}
+
+/****************************************/
+/* BELOW 760px (for mobile) */
+/****************************************/
+@media (max-width: 47.5rem) {
+  .testimonials-container h1 h3 {
+    top: 50%;
+  }
+
+  .testimonials-container h1 {
+    font-size: 40px;
+  }
+
+  .testimonials-container h1 h3 {
+    font-size: 32px;
+  }
 }

@@ -1,0 +1,44 @@
+.subscribe-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.subscribe-container h2 {
+  color: #741906;
+  font-size: 24px;
+  font-family: Nunito Sans;
+  font-weight: 600;
+}
+
+.subscribe-container p {
+  color: #12273d;
+  text-align: center;
+  font-size: 16px;
+  font-family: Nunito Sans;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+}
+
+.input-container {
+  display: flex;
+  gap: 18px;
+}
+
+.input-container input {
+  width: 276px;
+  height: 54px;
+}
+
+.input-container input::placeholder {
+  color: #12273d;
+  font-size: 16px;
+  font-family: Lato;
+  font-weight: 400;
+}
+
+.input-container button {
+  padding: 2.8rem 1.6rem;
+  background: #741906;
+}

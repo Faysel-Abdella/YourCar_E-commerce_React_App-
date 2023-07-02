@@ -1,6 +1,8 @@
+import classes from "./rates.module.css";
+
 const Rates = () => {
   return (
-    <div>
+    <div className={classes.rates}>
       <svg
         width="190"
         height="29"
