@@ -182,6 +182,10 @@
 /* BELOW 660px (for small tablet and phones) */
 /****************************************/
 @media (max-width: 42rem) {
+  .car-card {
+    margin-bottom: 40px;
+  }
+
   .img-container img {
     margin: 0 auto;
     width: 300px;
@@ -216,5 +220,39 @@
 
   .description-container {
     margin-bottom: 60px;
+  }
+}
+
+/****************************************/
+/* BELOW 400px (for samll mobile) */
+/****************************************/
+@media (max-width: 25rem) {
+  .img-container img {
+    /* margin: 0 auto; */
+
+    width: 230px;
+    height: 140px;
+    flex-shrink: 0;
+  }
+
+  .description-container {
+    height: 19rem;
+  }
+  .description-container p {
+    font-size: 14px;
+  }
+
+  .seats-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    color: #741906;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .car-quantity-conatiner small {
+    padding: 0px 8px;
   }
 }

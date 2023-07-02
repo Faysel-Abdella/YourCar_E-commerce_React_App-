@@ -1,0 +1,165 @@
+.images-container {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  line-height: 0;
+  /* the above line-height is to disappeare the small space between grid elemnts */
+}
+
+.image-container img {
+  width: 390px;
+  height: 270px;
+}
+
+.central-image img {
+  width: 570px;
+  height: 270px;
+}
+
+.center-image {
+  position: relative;
+}
+
+.central-text {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  /* transform: translate(-50%, -50%); */
+  z-index: 99;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Nunito Sans";
+}
+
+.central-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.central-text p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.central-text button {
+  cursor: pointer;
+}
+
+.central-text button span {
+  display: inline-block;
+  color: #ffffff;
+  background: 0;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  padding: 8px 28px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-top: 28px;
+}
+
+/****************************************/
+/* BELOW 1220px (for smaller computers) */
+/****************************************/
+@media (max-width: 76rem) {
+  .image-three img,
+  .image-six img,
+  .image-nine img {
+    display: none;
+  }
+
+  .image-container img {
+    width: 570px;
+    height: 270px;
+  }
+
+  .central-image img {
+    width: 650px;
+    height: 270px;
+  }
+}
+
+/****************************************/
+/* BELOW 1125px (for smaller computers) */
+/****************************************/
+@media (max-width: 71rem) {
+  .central-text {
+    position: absolute;
+    top: 30%;
+    left: 8%;
+  }
+}
+/****************************************/
+/* BELOW 1040px (for smaller computers) */
+/****************************************/
+@media (max-width: 65rem) {
+  .central-text {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+  }
+
+  .image-one img,
+  .image-four img,
+  .image-seven img {
+    display: none;
+  }
+
+  .central-image img {
+    width: 100vw;
+    height: 370px;
+  }
+
+  .central-text h2 {
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 14px;
+  }
+
+  .central-text p {
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+/****************************************/
+/* BELOW 700px (for tablet and moblie) */
+/****************************************/
+@media (max-width: 47rem) {
+  .central-text {
+    position: absolute;
+    top: 30%;
+    left: 6%;
+  }
+
+  .central-image img {
+    width: 100vw;
+    height: 270px;
+  }
+
+  .central-text h2 {
+    font-size: 38px;
+    font-weight: 400;
+    margin-bottom: 14px;
+  }
+
+  .central-text p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+/****************************************/
+/* BELOW 390px (for small moblie) */
+/****************************************/
+@media (max-width: 25rem) {
+  .central-text p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

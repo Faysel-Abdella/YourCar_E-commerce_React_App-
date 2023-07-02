@@ -1,0 +1,53 @@
+.testimonial-container {
+  position: relative;
+  background: #ffffff;
+  padding: 5.7rem 11rem 4.3rem 13.5rem;
+  margin: 0rem 25rem;
+  margin-top: 6rem;
+  margin-bottom: 40px;
+}
+
+.testimonial-container p {
+  color: #272727;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 500;
+  line-height: 150%;
+
+  margin-bottom: 4.2rem;
+}
+
+.rates {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.testimonial-container h2 {
+  color: #12273d;
+  text-align: center;
+  font-size: 32px;
+  font-family: "Nunito Sans";
+  font-weight: 700;
+  line-height: 150%;
+  /* margin-right: 48px; */
+}
+
+.testimonial-container span {
+  color: #979797;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Nunito Sans";
+  font-style: italic;
+  font-weight: 300;
+  line-height: 150%;
+
+  margin-left: 30px;
+}
+
+.testimonial-car-image {
+  position: absolute;
+  right: -130px;
+  bottom: -60px;
+}

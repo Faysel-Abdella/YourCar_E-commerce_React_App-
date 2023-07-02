@@ -1,0 +1,33 @@
+.testimonials-container {
+  background-image: url(../../assets/testimonial_images/testimonial_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 876px; */
+  padding-top: 6rem;
+  padding-bottom: 12rem;
+  z-index: -1;
+}
+
+.testimonials-container h1 {
+  position: relative;
+  color: #ebebeb3e;
+  font-size: 128px;
+  font-family: Lora;
+  font-weight: 700;
+  text-align: center;
+}
+
+.testimonials-container h1 h3 {
+  position: absolute;
+  left: 50%;
+  top: 58%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 58px;
+  font-family: "Lora";
+  font-weight: 700;
+}
+
+.slickDots {
+  color: #fff;
+}
