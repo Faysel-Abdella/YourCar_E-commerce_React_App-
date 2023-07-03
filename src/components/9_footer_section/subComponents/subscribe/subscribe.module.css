@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  justify-content: center;
+  align-items: center;
 }
 
 .subscribe-container h2 {
@@ -22,6 +24,7 @@
 }
 
 .input-container {
+  position: relative;
   display: flex;
   gap: 18px;
 }
@@ -29,16 +32,51 @@
 .input-container input {
   width: 276px;
   height: 54px;
+  padding-left: 8px;
+  border: 0.5px #741906 solid;
 }
 
 .input-container input::placeholder {
   color: #12273d;
-  font-size: 16px;
+  font-size: 18px;
   font-family: Lato;
   font-weight: 400;
 }
 
+.input-container input {
+  font-size: 18px;
+}
+
 .input-container button {
-  padding: 2.8rem 1.6rem;
+  cursor: pointer;
+  width: 135px;
+  height: 54px;
+  flex-shrink: 0;
   background: #741906;
+
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-family: Lato;
+  font-weight: 700;
+}
+
+.error-message {
+  /* opacity: 0; */
+  transform: translateY(-120%);
+  position: absolute;
+  bottom: -26px;
+  left: 20px;
+  transition: all 0.3s ease-in;
+  z-index: -2;
+}
+
+.show-error .error-message {
+  /* opacity: 1; */
+  transform: translateY(0);
+}
+
+.input-container p {
+  color: red;
+  font-weight: 500;
 }

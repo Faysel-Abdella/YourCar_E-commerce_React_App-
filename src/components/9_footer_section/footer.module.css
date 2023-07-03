@@ -1,0 +1,37 @@
+.footer-container {
+  padding: 6.3rem 11rem 4rem 13.6rem;
+}
+
+.footer-top {
+  display: flex;
+  align-items: start;
+}
+
+.footer-top > *:not(:first-child) {
+  margin-left: 110px;
+}
+
+.footer-container .social-icons svg {
+  margin-bottom: 18px;
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+  border-bottom: 2px #741906 solid;
+}
+
+.copy-right {
+  text-align: center;
+  color: #12273d;
+  font-size: 16px;
+  font-family: Nunito Sans;
+  font-weight: 400;
+
+  margin-top: 24px;
+}
+
+.copy-right span {
+  font-weight: 700;
+  color: #741906;
+}
