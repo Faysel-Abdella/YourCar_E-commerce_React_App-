@@ -202,7 +202,7 @@ header.sticky .btn-mobile-nav {
     background-color: #741906;
     border-radius: 6px;
     padding: 8px 14px;
-    width: auto;
+    /* width: 100vw; */
   }
 }
 

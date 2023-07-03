@@ -44,19 +44,7 @@ const MainNavBar = () => {
   };
 
   // ******** hide the navBar if the user click an area outside navbar
-  const navRef = useRef();
-  // useEffect(() => {
-  //   const handleOutsideClick = (event) => {
-  //     if (event.target.id !== "mainNav") {
-  //       setMobileNavOpen(false);
-  //     }
-  //   };
-  //   window.addEventListener("click", handleOutsideClick);
-
-  //   return () => {
-  //     window.removeEventListener("click", handleOutsideClick);
-  //   };
-  // }, []);
+  // @ to--do
 
   // ********Making the navigation stocky after the first page******************* //
   const [isSticky, setIsSticky] = useState(false);
@@ -92,7 +80,7 @@ const MainNavBar = () => {
         <h1>
           Your<span>Car</span>
         </h1>
-        <nav className={classes["main-nav"]} id="mainNav" ref={navRef}>
+        <nav className={classes["main-nav"]} id="mainNav">
           <ul className={classes["nav-lists"]}>
             <li>
               <Link
