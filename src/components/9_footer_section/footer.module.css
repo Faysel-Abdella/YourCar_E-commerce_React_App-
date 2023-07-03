@@ -4,7 +4,7 @@
 
 .footer-top {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .footer-top > *:not(:first-child) {

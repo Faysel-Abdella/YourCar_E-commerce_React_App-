@@ -32,12 +32,13 @@ const Testimonials = () => {
   return (
     <div className={classes["testimonials-container"]}>
       <h1>
-        TESTIMONIALS <h3>Testimonials</h3>
+        TESTIMONIALS <p>Testimonials</p>
       </h1>
 
       <Slider {...sliderSettings}>
-        {testimonialArray.map((testimonial) => (
+        {testimonialArray.map((testimonial, index) => (
           <Testimonial
+            key={index}
             name={testimonial.name}
             description={testimonial.description}
             imageNo={testimonial.image}

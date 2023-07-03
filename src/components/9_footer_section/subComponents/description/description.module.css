@@ -5,6 +5,7 @@
 }
 
 .description-container h1 {
+  cursor: pointer;
   color: #741906;
   font-size: 32px;
   font-family: Lora;

@@ -23,6 +23,7 @@ const Cart = (props) => {
       <div className={classes["cart-items"]}>
         {cartArray.map((car) => (
           <CartItem
+            key={car.id}
             name={car.name}
             class={car.class}
             imageNumber={car.image}
@@ -32,7 +33,7 @@ const Cart = (props) => {
         ))}
       </div>
 
-      <button
+      <div
         className={classes["delete-button"]}
         onClick={deleteAllCarsFromCartHandler}
       >
@@ -57,7 +58,7 @@ const Cart = (props) => {
             </svg>
           </button>
         </div>
-      </button>
+      </div>
     </div>
   );
 };

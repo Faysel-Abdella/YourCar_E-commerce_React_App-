@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import MainNavBar from "../1_mainNavigation/MainNavBar";
 import classes from "./Hero.module.css";
 
@@ -17,25 +18,27 @@ const Hero = () => {
         <br />
         with your dream car!
       </p>
-      <div className={classes.heroBtn}>
-        <button className={classes.ctaBtn}>
-          Discover{" "}
-          <svg
-            width="28"
-            height="28"
-            fill="none"
-            stroke="currentColor"
-            // stroke-linecap="round"
-            // stroke-linejoin="round"
-            // stroke-width="2"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M18 6 6 18"></path>
-            <path d="M8 6h10v10"></path>
-          </svg>
-        </button>
-      </div>
+      <Link to="section4" smooth={true} duration={500} spy={true}>
+        <div className={classes.heroBtn}>
+          <button className={classes.ctaBtn}>
+            Discover{" "}
+            <svg
+              width="28"
+              height="28"
+              fill="none"
+              stroke="currentColor"
+              // stroke-linecap="round"
+              // stroke-linejoin="round"
+              // stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M18 6 6 18"></path>
+              <path d="M8 6h10v10"></path>
+            </svg>
+          </button>
+        </div>
+      </Link>
     </div>
   );
 };

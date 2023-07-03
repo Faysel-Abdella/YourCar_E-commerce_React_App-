@@ -21,7 +21,6 @@ const Subscribe = () => {
   const submitSubscribe = (event) => {
     event.preventDefault();
     if (emailInput === "" || !emailRegex.test(emailInput)) {
-      console.log("There is an error");
       setUserTouchTheInputBox(true);
       setEmailInputIsCorrect(false);
 
@@ -48,6 +47,7 @@ const Subscribe = () => {
           enteredEmailIsInValid ? classes["show-error"] : ""
         }`}
         onSubmit={submitSubscribe}
+        id="form1"
       >
         <input
           // type="email"

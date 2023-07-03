@@ -65,7 +65,6 @@ const carSlice = createSlice({
     },
 
     deleteAllCarFromCart(state) {
-      console.log("Hi");
       state.orderedCars.length = 0;
       state.totalOrderedQuantity = 0;
     },

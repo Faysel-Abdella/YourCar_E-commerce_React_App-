@@ -28,11 +28,13 @@
 }
 
 .heroBtn {
+  cursor: pointer;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .ctaBtn {
+  cursor: pointer;
   display: flex;
   padding: 12px 28px;
   justify-content: center;
