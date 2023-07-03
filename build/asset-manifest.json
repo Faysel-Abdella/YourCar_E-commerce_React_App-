@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/YourCar_E-commerce_React_App-/static/css/main.ea8eafb9.css",
+    "main.js": "/YourCar_E-commerce_React_App-/static/js/main.c5251b5f.js",
+    "static/media/background.png": "/YourCar_E-commerce_React_App-/static/media/background.5ec6b6901e54fafa9bfe.png",
+    "static/media/abtUs.png": "/YourCar_E-commerce_React_App-/static/media/abtUs.5b1b93fbaa704be7bea4.png",
+    "static/media/car2.png": "/YourCar_E-commerce_React_App-/static/media/car2.cf6be4cba47f35cb88a6.png",
+    "static/media/car8.png": "/YourCar_E-commerce_React_App-/static/media/car8.4c73358abf77785c8e53.png",
+    "static/media/car1.png": "/YourCar_E-commerce_React_App-/static/media/car1.c33e2fc9372ccc3fa388.png",
+    "static/media/car4.png": "/YourCar_E-commerce_React_App-/static/media/car4.079bcaa9175a934b0f66.png",
+    "static/media/servicesBackground.png": "/YourCar_E-commerce_React_App-/static/media/servicesBackground.784cbbf285aad2456274.png",
+    "static/media/car6.png": "/YourCar_E-commerce_React_App-/static/media/car6.c33e2fc9372ccc3fa388.png",
+    "static/media/car9.png": "/YourCar_E-commerce_React_App-/static/media/car9.845a19dbc17dcb41ba91.png",
+    "static/media/car5.png": "/YourCar_E-commerce_React_App-/static/media/car5.c33cf07a692e6d2f3912.png",
+    "static/media/car7.png": "/YourCar_E-commerce_React_App-/static/media/car7.ebbc5c1a63c3cfcdf603.png",
+    "static/media/car3.png": "/YourCar_E-commerce_React_App-/static/media/car3.7077747dfee2b0fe79d3.png",
+    "static/media/sponsor7.png": "/YourCar_E-commerce_React_App-/static/media/sponsor7.eb2c410c614821706bcd.png",
+    "static/media/slick.svg": "/YourCar_E-commerce_React_App-/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/YourCar_E-commerce_React_App-/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/YourCar_E-commerce_React_App-/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/YourCar_E-commerce_React_App-/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/YourCar_E-commerce_React_App-/index.html",
+    "main.ea8eafb9.css.map": "/YourCar_E-commerce_React_App-/static/css/main.ea8eafb9.css.map",
+    "main.c5251b5f.js.map": "/YourCar_E-commerce_React_App-/static/js/main.c5251b5f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea8eafb9.css",
+    "static/js/main.c5251b5f.js"
+  ]
+}
