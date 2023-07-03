@@ -6,7 +6,7 @@ import classes from "./footer.module.css";
 
 const Footer = () => {
   return (
-    <div className={classes["footer-container"]} id="section5">
+    <div className={classes["footer-container"]}>
       <div className={classes["footer-top"]}>
         <Description />
         <Subscribe />

@@ -1,7 +1,7 @@
 import classes from "./sponsors.module.css";
 const Sponsors = () => {
   return (
-    <div className={classes["sponsers-container"]}>
+    <div className={classes["sponsers-container"]} id="section5">
       <img
         src={require("../../assets/sponsorsImages/sponsor1.png")}
         alt="our sponser"
