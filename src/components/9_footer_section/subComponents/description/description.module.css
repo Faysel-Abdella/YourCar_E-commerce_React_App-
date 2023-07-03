@@ -25,3 +25,21 @@
 
   margin-left: 8px;
 }
+
+/****************************************/
+/* BELOW 1130px (for small computers) */
+/****************************************/
+@media (max-width: 70.6rem) {
+  /* .footer-container {
+    padding: 6.3rem 11rem 4rem 13.6rem;
+  } */
+
+  .description-container h1,
+  .description-container p {
+    text-align: center;
+  }
+
+  .description-container p {
+    font-size: 18px;
+  }
+}

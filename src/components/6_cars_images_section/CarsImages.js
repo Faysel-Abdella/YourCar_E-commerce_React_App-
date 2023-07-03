@@ -38,7 +38,7 @@ const CarsImages = () => {
           <h2>Tesla Model 3</h2>
           <p>Disruptive, avant-grade, futuristic, innovative</p>
           <button>
-            <Link to="footer">
+            <Link to="section5" duration={900} smooth={true}>
               <span>Contact</span>
             </Link>
           </button>

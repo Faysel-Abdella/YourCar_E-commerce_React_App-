@@ -33,3 +33,21 @@
   font-weight: 400;
   text-decoration: none;
 }
+
+/****************************************/
+/* BELOW 1130px (for small computers) */
+/****************************************/
+@media (max-width: 70.6rem) {
+  /* .footer-container {
+    padding: 6.3rem 11rem 4rem 13.6rem;
+  } */
+
+  .contact-container {
+    margin-top: 20px;
+    gap: 24px;
+  }
+
+  .contact-infos-container {
+    align-items: flex-start;
+  }
+}

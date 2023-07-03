@@ -43,6 +43,10 @@
   font-weight: 400;
 }
 
+input:focus {
+  outline: none;
+}
+
 .input-container input {
   font-size: 18px;
 }
@@ -79,4 +83,15 @@
 .input-container p {
   color: red;
   font-weight: 500;
+}
+
+/****************************************/
+/* BELOW 600px (for mobiles) */
+/****************************************/
+@media (max-width: 37.5rem) {
+  .input-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 18px;
+  }
 }

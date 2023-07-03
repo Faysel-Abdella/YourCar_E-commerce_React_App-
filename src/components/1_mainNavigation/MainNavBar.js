@@ -158,7 +158,7 @@ const MainNavBar = () => {
                 spy={true}
                 smooth={true}
                 offset={-25}
-                duration={500}
+                duration={900}
                 onClick={hideNavHandler}
               >
                 Contact us
