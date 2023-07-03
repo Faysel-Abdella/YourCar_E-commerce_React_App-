@@ -1,6 +1,7 @@
 {
   "name": "car-shop",
   "version": "0.1.0",
+  "homepage": "https://Faysel-Abdella.github.io/YourCar_E-commerce_React_App-",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^1.0.6",
@@ -21,6 +22,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }

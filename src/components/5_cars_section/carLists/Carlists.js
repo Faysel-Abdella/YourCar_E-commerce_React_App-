@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
