@@ -58,7 +58,7 @@ button {
   color: #ffffff;
   font-size: 20px;
   font-weight: 400;
-  margin-top: 90px;
+  margin-top: 10px;
   margin-left: 70px;
   display: flex;
   align-items: center;
@@ -92,5 +92,14 @@ button {
 @media (max-width: 36rem) {
   .cart-modal {
     width: 90%;
+  }
+}
+
+/****************************************/
+/* BELOW 500px (for smaller computers) */
+/****************************************/
+@media (max-width: 26rem) {
+  .delete-button div {
+    margin-top: 90px;
   }
 }
