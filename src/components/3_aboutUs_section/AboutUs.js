@@ -1,7 +1,7 @@
 import classes from "./aboutUs.module.css";
-import myimg from "../../assets/aboutUsimg/abtUs.png";
 
 const AboutUs = () => {
+  const myimg = require("../../assets/aboutUsimg/abtUs.png");
   return (
     <div className={classes["about-us-container"]} id="section2">
       <h1>ABOUT US</h1>
