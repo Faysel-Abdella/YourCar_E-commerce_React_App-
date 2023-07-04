@@ -5,7 +5,7 @@ import { carActions } from "../store/carDataStore";
 import classes from "./CartItem.module.css";
 
 const CartItem = (props) => {
-  let imageSrc = require(`../assets/carsSectionImgs/car${props.imageNumber}.png`);
+  let imageSrc = require(`../assets/carssectionimgs/car${props.imageNumber}.png`);
 
   const dispatch = useDispatch();
 
