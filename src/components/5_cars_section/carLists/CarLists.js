@@ -8,7 +8,7 @@ import CarList from "../carList/CarList";
 
 import data from "../../../data/data.json";
 
-const CartLists = () => {
+const CarLists = () => {
   const dataArray = [...data.cars];
 
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
@@ -141,4 +141,4 @@ const CartLists = () => {
   );
 };
 
-export default CartLists;
+export default CarLists;
