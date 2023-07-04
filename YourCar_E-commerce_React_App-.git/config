@@ -3,6 +3,6 @@
 	filemode = false
 	bare = true
 	symlinks = false
-	ignorecase = true
+	ignorecase = false
 [remote "origin"]
 	url = https://github.com/Faysel-Abdella/YourCar_E-commerce_React_App-
