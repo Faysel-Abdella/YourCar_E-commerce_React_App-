@@ -1,6 +1,4 @@
-Live demo https://your-car-faysel.vercel.app/
-
-<a href="https://your-car-faysel.vercel.app/">View site</a>
+To view my project site  👉 <a href="https://yourcar-faysel.netlify.app/">View site</a>
 
 👋Hi, this is my third project at 'Al-bunyan al-mersus' progrmming contest. it is a car shop e-commerce app with React.js.
 
