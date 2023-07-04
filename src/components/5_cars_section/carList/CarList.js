@@ -40,7 +40,7 @@ const CarList = (pr) => {
     );
   };
 
-  let imageSrc = require(`../../../assets/carsSectionImgs/car${props.image}.png`);
+  let imageSrc = require(`../../../assets/carssectionimgs/car${props.image}.png`);
 
   return (
     <div className={classes["car-card"]}>

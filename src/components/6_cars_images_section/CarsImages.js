@@ -3,15 +3,15 @@ import { Link } from "react-scroll";
 import classes from "./CarsImages.module.css";
 
 const CarsImages = () => {
-  const car1 = require("../../assets/carsImages/car1.png");
-  const car2 = require("../../assets/carsImages/car2.png");
-  const car3 = require("../../assets/carsImages/car3.png");
-  const car4 = require("../../assets/carsImages/car4.png");
-  const car5 = require("../../assets/carsImages/car5.png");
-  const car6 = require("../../assets/carsImages/car6.png");
-  const car7 = require("../../assets/carsImages/car7.png");
-  const car8 = require("../../assets/carsImages/car8.png");
-  const car9 = require("../../assets/carsImages/car9.png");
+  const car1 = require("../../assets/carsimages/car1.png");
+  const car2 = require("../../assets/carsimages/car2.png");
+  const car3 = require("../../assets/carsimages/car3.png");
+  const car4 = require("../../assets/carsimages/car4.png");
+  const car5 = require("../../assets/carsimages/car5.png");
+  const car6 = require("../../assets/carsimages/car6.png");
+  const car7 = require("../../assets/carsimages/car7.png");
+  const car8 = require("../../assets/carsimages/car8.png");
+  const car9 = require("../../assets/carsimages/car9.png");
 
   return (
     <div className={classes["images-container"]}>
