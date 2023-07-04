@@ -20,6 +20,10 @@
 
   /* Hide it from screen readers */
   visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .show-cart.cart-modal {

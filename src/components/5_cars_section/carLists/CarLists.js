@@ -11,33 +11,33 @@ import data from "../../../data/data.json";
 const CarLists = () => {
   const dataArray = [...data.cars];
 
-  const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-    <button
-      {...props}
-      className={
-        "slick-prev slick-arrow" + (currentSlide === 0 ? " slick-disabled" : "")
-      }
-      aria-hidden="true"
-      aria-disabled={currentSlide === 0 ? true : false}
-      type="button"
-    >
-      Previous
-    </button>
-  );
-  const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-    <button
-      {...props}
-      className={
-        "slick-next slick-arrow" +
-        (currentSlide === slideCount - 1 ? " slick-disabled" : "")
-      }
-      aria-hidden="true"
-      aria-disabled={currentSlide === slideCount - 1 ? true : false}
-      type="button"
-    >
-      Next
-    </button>
-  );
+  // const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
+  //   <button
+  //     {...props}
+  //     className={
+  //       "slick-prev slick-arrow" + (currentSlide === 0 ? " slick-disabled" : "")
+  //     }
+  //     aria-hidden="true"
+  //     aria-disabled={currentSlide === 0 ? true : false}
+  //     type="button"
+  //   >
+  //     Previous
+  //   </button>
+  // );
+  // const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
+  //   <button
+  //     {...props}
+  //     className={
+  //       "slick-next slick-arrow" +
+  //       (currentSlide === slideCount - 1 ? " slick-disabled" : "")
+  //     }
+  //     aria-hidden="true"
+  //     aria-disabled={currentSlide === slideCount - 1 ? true : false}
+  //     type="button"
+  //   >
+  //     Next
+  //   </button>
+  // );
 
   const sliderSettings = {
     // arrows: false,
@@ -50,52 +50,52 @@ const CarLists = () => {
     infinite: true,
 
     nextArrow: (
-      // <div>
-      //   <div className={classes["next-slick-arrow"]}>
-      //     <button
-      //       className={classes["prev-icon"]}
-      //       // onClick={handleGoToClick(--currentSlid)}
-      //     >
-      //       <svg
-      //         width="24"
-      //         height="24"
-      //         viewBox="0 0 10 16"
-      //         fill="none"
-      //         xmlns="http://www.w3.org/2000/svg"
-      //       >
-      //         <path
-      //           d="M0.585815 2.34317L2.00003 0.928955L9.0711 8.00002L2.00003 15.0711L0.585815 13.6569L6.24267 8.00002L0.585815 2.34317Z"
-      //           fill="white"
-      //         />
-      //       </svg>
-      //     </button>
-      //   </div>
-      // </div>
-      <SlickArrowRight />
+      <div>
+        <div className={classes["next-slick-arrow"]}>
+          <button
+            className={classes["prev-icon"]}
+            // onClick={handleGoToClick(--currentSlid)}
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 10 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.585815 2.34317L2.00003 0.928955L9.0711 8.00002L2.00003 15.0711L0.585815 13.6569L6.24267 8.00002L0.585815 2.34317Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      // <SlickArrowRight />
     ),
     prevArrow: (
-      // <div>
-      //   <div className={classes["prev-slick-arrow"]}>
-      //     <button
-      //       className={classes["next-icon"]}
-      //       // onClick={handleGoToClick(++currentSlid)}
-      //     >
-      //       <svg
-      //         width="24"
-      //         height="24"
-      //         viewBox="0 0 10 16"
-      //         fill="none"
-      //         xmlns="http://www.w3.org/2000/svg"
-      //       >
-      //         <path
-      //           d="M9.41418 2.34317L7.99997 0.928955L0.928904 8.00002L7.99997 15.0711L9.41418 13.6569L3.75733 8.00002L9.41418 2.34317Z"
-      //           fill="white"
-      //         />
-      //       </svg>
-      //     </button>
-      //   </div>
-      // </div>
-      <SlickArrowLeft />
+      <div>
+        <div className={classes["prev-slick-arrow"]}>
+          <button
+            className={classes["next-icon"]}
+            // onClick={handleGoToClick(++currentSlid)}
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 10 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.41418 2.34317L7.99997 0.928955L0.928904 8.00002L7.99997 15.0711L9.41418 13.6569L3.75733 8.00002L9.41418 2.34317Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      // <SlickArrowLeft />
     ),
 
     responsive: [
